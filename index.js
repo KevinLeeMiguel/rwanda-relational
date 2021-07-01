@@ -44,6 +44,11 @@ const app = {
             return locations.filter(l => l.location_type === village_t_l && l.parent_id === where.parent_id).sort(generic_sort)
         return locations.filter(l => l.location_type === village_t_l).sort(generic_sort)
     },
+    all: (where = {}) => {
+        if (where.id)
+            return locations.filter(l => l.id == where.id)[0]
+        return locations
+    }
 
 }
 
