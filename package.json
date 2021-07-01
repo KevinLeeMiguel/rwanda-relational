@@ -1,0 +1,23 @@
+{
+  "name": "rwanda-relational",
+  "version": "1.0.0",
+  "description": "this is a simple npm package that offers a related collection of rwandan locations (provinces, districts, sectors, cells, and villages).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rwanda",
+    "demographics",
+    "rwanda provinces",
+    "rwanda districts",
+    "rwanda sectors",
+    "rwanda cells",
+    "rwanda villages",
+    "Rwanda",
+    "relational",
+    "rwanda relational"
+  ],
+  "author": "Lee Miguel Kevin Iradukunda",
+  "license": "MIT"
+}
