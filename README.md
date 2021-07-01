@@ -95,25 +95,31 @@ this package is very easy to use, it exposes `6` methods that will get the job d
 ### Query and Filtering
 
 
-*Any  method allows an query parameter which is an object that looks like this ``{id: 1} or {parent_id: 2}``, an exception is on the `provinces` method since a province doesn't have a parent.*
+*Any  method allows a query parameter which is an object that looks like this ``{id: 1}`` or ``{parent_id: 2}``, an exception is on the `provinces` method since a province doesn't have a parent.*
 
 *For now the query parameter is limited to `2` fields only, the `id` and the `parent_id` fields.*
 
-### The `id` field (Query by id)
+#### The `id` field (Query by id)
 
-example: get a province where id=1
+This is used to get a signle location by `id`.
 
 ```js
 const { provinces, districts, sectors, cells, villages, all } = require('rwanda-rel-locations')
 
 # Get a location byId
 
-provinces({ id: 1 }) # Note that this is applicable on every method exposed.
+provinces({ id: 1 }) # Note that this is applicable on every method exposed. 
 
+```
+
+#### The `parent_id` field (Query by id)
+
+This is used to get a list of children by just using their `parent_id`.
+
+```js
 # Get all child locations by parent_id
 
 districts({ parent_id: 2 }) # Note that this is applicable on every instance that has a parent.
-
 
 ```
 
