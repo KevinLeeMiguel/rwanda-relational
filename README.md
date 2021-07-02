@@ -76,7 +76,10 @@ This package can be installed using npm:
 
 this package is very easy to use, it exposes `6` methods that will get the job done.
 
-```const { provinces, districts, sectors, cells, villages, all } = require('rwanda-rel-locations')```
+```js 
+const { provinces, districts, sectors, cells, villages, all } = require('rwanda-relational')
+
+```
 
 
 
