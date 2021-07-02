@@ -70,7 +70,9 @@ This shows that after setting the backend the developper can just make an endpoi
 
 This package can be installed using npm:
 
-``` npm install rwanda-relational ```
+```
+npm install rwanda-relational 
+```
 
 ## Usage
 
