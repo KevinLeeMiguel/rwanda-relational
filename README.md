@@ -1,8 +1,6 @@
-# rwanda-relational
-
-### This is a simple package made with relational databases and the backend in mind. (note: no-sql dbs can also take advantage of this package)
-
 # Overview
+
+This is a simple package made with relational databases and the backend in mind. (note: no-sql dbs can also take advantage of this package)
 
 ## Problem Statement
 
@@ -14,7 +12,7 @@ So most of the times when the backend is set and the frontend needs to use this 
 
 ## Proposed Solution
 
-This packages offers a way to have a `json` that acts like a copy of your database on the frontend and a way to ship the data from this package to your database easily.
+This package offers a way to have a `json` that acts like a copy of your database on the frontend and a way to ship the data from this package to your database easily.
 
 ### data format
 
@@ -131,6 +129,6 @@ districts({ parent_id: 2 }) // Note that this is applicable on every instance th
 
 ## Conclusion
 
-This package is opensource and free to use by any developer in need, and will be upgraded and features will be added from time to time if you want to contribute to this package you are very welcome any contribution is very valuable from fixing/improving the documentation to adding features.
+This package is opensource and free to use by any developer in need, will be upgraded and features will be added from time to time. If you want to contribute to this package you are very welcome, any contribution is very valuable from fixing/improving the documentation to adding features.
 
-*Made with Love.*
+*Made with Love*

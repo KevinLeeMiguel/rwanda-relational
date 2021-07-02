@@ -1,6 +1,6 @@
 {
   "name": "rwanda-relational",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "this is a simple npm package that offers a related collection of rwandan locations (provinces, districts, sectors, cells, and villages).",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,13 @@
     "rwanda relational"
   ],
   "author": "Lee Miguel Kevin Iradukunda",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinLeeMiguel/rwanda-relational.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KevinLeeMiguel/rwanda-relational/issues"
+  },
+  "homepage": "https://github.com/KevinLeeMiguel/rwanda-relational#readme"
 }
