@@ -100,7 +100,7 @@ all()  // will return a list of all locations from provinces to villages.
 ### Query and Filtering
 
 
-*Any  method allows a query parameter which is an object that looks like this ```js {id: 1} ``` or ```js {parent_id: 2} ```, an exception is on the `provinces` method since a province doesn't have a parent.*
+*Any  method allows a query parameter which is an object that looks like this `{id: 1} ` or `{parent_id: 2} `, an exception is on the `provinces` method since a province doesn't have a parent.*
 
 *For now the query parameter is limited to `2` fields only, the `id` and the `parent_id` fields.*
 
