@@ -12,7 +12,7 @@ And this can be a lot of work from implementing a database structure to support 
 
 So most of the times when the backend is set and the frontend needs to use this data, this can be resource consuming depending on the implementation. In most cases where every time a user wants to select from the locations there's at least a request that goes to the backend. which can be hectic and resource consuming.
 
-## Solution being proposed
+## Proposed Solution
 
 This packages offers a way to have a `json` that acts like a copy of your database on the frontend and a way to ship the data from this package to your database easily.
 
@@ -79,39 +79,39 @@ this package is very easy to use, it exposes `6` methods that will get the job d
 ```js 
 const { provinces, districts, sectors, cells, villages, all } = require('rwanda-relational')
 
+provinces() // will return a list of all provinces.
+
+districts() // will return a list of all districts.
+
+sectors()   // will return a list of all sectors.
+
+cells()     // will return a list of all cells.
+
+villages()  // will return a list of all villages.
+
+all()  // will return a list of all locations from provinces to villages.
+
 ```
 
 
 
-```provinces()``` will return a list of all provinces.
 
-```districts()``` will return a list of all districts.
-
-```sectors()```   will return a list of all sectors.
-
-```cells()```     will return a list of all cells.
-
-```villages()```  will return a list of all villages.
-
-```all()```  will return a list of all locations from provinces to villages.
 
 ### Query and Filtering
 
 
-*Any  method allows a query parameter which is an object that looks like this ``{id: 1}`` or ``{parent_id: 2}``, an exception is on the `provinces` method since a province doesn't have a parent.*
+*Any  method allows a query parameter which is an object that looks like this ```js {id: 1} ``` or ```js {parent_id: 2} ```, an exception is on the `provinces` method since a province doesn't have a parent.*
 
 *For now the query parameter is limited to `2` fields only, the `id` and the `parent_id` fields.*
 
 #### The `id` field (Query by id)
 
-This is used to get a signle location by `id`.
+This is used to get a single location by `id`.
 
 ```js
-const { provinces, districts, sectors, cells, villages, all } = require('rwanda-rel-locations')
+const { provinces, districts, sectors, cells, villages, all } = require('rwanda-relational')
 
-# Get a location byId
-
-provinces({ id: 1 }) # Note that this is applicable on every method exposed. 
+provinces({ id: 1 }) // Note that this is applicable on every method exposed. 
 
 ```
 
@@ -120,9 +120,9 @@ provinces({ id: 1 }) # Note that this is applicable on every method exposed.
 This is used to get a list of children by just using their `parent_id`.
 
 ```js
-# Get all child locations by parent_id
+const { provinces, districts, sectors, cells, villages, all } = require('rwanda-relational')
 
-districts({ parent_id: 2 }) # Note that this is applicable on every instance that has a parent.
+districts({ parent_id: 2 }) // Note that this is applicable on every instance that has a parent.
 
 ```
 

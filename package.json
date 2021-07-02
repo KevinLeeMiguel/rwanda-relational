@@ -1,6 +1,6 @@
 {
   "name": "rwanda-relational",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "this is a simple npm package that offers a related collection of rwandan locations (provinces, districts, sectors, cells, and villages).",
   "main": "index.js",
   "scripts": {
