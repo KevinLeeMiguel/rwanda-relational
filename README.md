@@ -8,7 +8,7 @@ When developing softwares or web applications in **Rwanda**, in most cases you w
 
 And this can be a lot of work from implementing a database structure to support this in the backend and the way to pass the data to the frontend in an effective way. and let's not forget where to get the data and how to pre-populate the data in your database.
 
-So most of the times when the backend is set and the frontend needs to use this data, this can be resource consuming depending on the implementation. In most cases where every time a user wants to select from the locations there's at least a request that goes to the backend. which can be hectic and resource consuming.
+Also most of the times when the backend is set and the frontend needs to use this data, this can be resource consuming depending on the implementation. In most cases where every time a user wants to select from the locations there's at least a request that goes to the backend. which can be hectic and resource consuming.
 
 ## Proposed Solution
 
@@ -111,18 +111,22 @@ This is used to get a single location by `id`.
 ```js
 const { provinces, districts, sectors, cells, villages, all } = require('rwanda-relational')
 
-provinces({ id: 1 }) // Note that this is applicable on every method exposed. 
+provinces({ id: 1 }) // returns an object of the province with id=1 and undefined if not found.
 
+// Note that this is applicable on every method exposed. 
 ```
 
-#### The `parent_id` field (Query by id)
+#### The `parent_id` field (Query by parent_id)
 
 This is used to get a list of children by just using their `parent_id`.
 
 ```js
 const { provinces, districts, sectors, cells, villages, all } = require('rwanda-relational')
 
-districts({ parent_id: 2 }) // Note that this is applicable on every instance that has a parent.
+districts({ parent_id: 2 }) // returns a list of districts with parent_id=2
+
+// Note that this is applicable on every instance that has a parent.
+
 
 ```
 
